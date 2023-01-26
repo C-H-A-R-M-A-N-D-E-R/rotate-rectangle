@@ -18,85 +18,83 @@
     >
     </canvas>
     <script>
-      var canvas = document.getElementById("myCanvas");
-      var ctx2 = canvas.getContext("2d");
-      ctx2.translate(50 + 100 / 2, 50 + 100 / 2);
-      ctx2.fillStyle = "#333";
+      const size = 250;
+      const translate = 70;
+      const rotate = -125;
+      let deg = Math.PI / 180;
+      let canvas = document.getElementById("myCanvas");
+      let ctx = canvas.getContext("2d");
 
-      ctx2.fillRect(20, 20, 100, 100);
-      var ctx = canvas.getContext("2d");
+      ctx.translate(100 + 200 / 4, 100 + 200 / 4);
 
       ctx.fillStyle = "red";
-
-      var deg = Math.PI / 180;
-
       ctx.save();
-      ctx.translate(70, 70);
+      ctx.translate(translate, translate);
       ctx.rotate(10 * deg);
-      ctx.fillRect(-50, -50, 100, 100);
+      ctx.fillRect(rotate, rotate, size, size);
       ctx.restore();
 
       ctx.fillStyle = "yellow";
       ctx.save();
-      ctx.translate(70, 70);
+      ctx.translate(translate, translate);
       ctx.rotate(20 * deg);
-      ctx.fillRect(-50, -50, 100, 100);
+      ctx.fillRect(rotate, rotate, size, size);
       ctx.restore();
 
       ctx.fillStyle = "green";
       ctx.save();
-      ctx.translate(70, 70);
+      ctx.translate(translate, translate);
       ctx.rotate(30 * deg);
-      ctx.fillRect(-50, -50, 100, 100);
+      ctx.fillRect(rotate, rotate, size, size);
       ctx.restore();
 
       ctx.fillStyle = "orange";
       ctx.save();
-      ctx.translate(70, 70);
+      ctx.translate(translate, translate);
       ctx.rotate(40 * deg);
-      ctx.fillRect(-50, -50, 100, 100);
+      ctx.fillRect(rotate, rotate, size, size);
       ctx.restore();
 
       ctx.fillStyle = "pink";
       ctx.save();
-      ctx.translate(70, 70);
+      ctx.translate(translate, translate);
       ctx.rotate(50 * deg);
-      ctx.fillRect(-50, -50, 100, 100);
+      ctx.fillRect(rotate, rotate, size, size);
       ctx.restore();
 
       ctx.fillStyle = "purple";
       ctx.save();
-      ctx.translate(70, 70);
+      ctx.translate(translate, translate);
       ctx.rotate(60 * deg);
-      ctx.fillRect(-50, -50, 100, 100);
+      ctx.fillRect(rotate, rotate, size, size);
       ctx.restore();
 
       ctx.fillStyle = "gray";
       ctx.save();
-      ctx.translate(70, 70);
+      ctx.translate(translate, translate);
       ctx.rotate(70 * deg);
-      ctx.fillRect(-50, -50, 100, 100);
+      ctx.fillRect(rotate, rotate, size, size);
       ctx.restore();
 
       ctx.fillStyle = "cyan";
       ctx.save();
-      ctx.translate(70, 70);
+      ctx.translate(translate, translate);
       ctx.rotate(80 * deg);
-      ctx.fillRect(-50, -50, 100, 100);
+      ctx.fillRect(rotate, rotate, size, size);
       ctx.restore();
 
       ctx.fillStyle = "red";
       ctx.save();
-      ctx.translate(70, 70);
+      ctx.translate(translate, translate);
       ctx.rotate(90 * deg);
-      ctx.fillRect(-50, -50, 100, 100);
+      ctx.fillRect(rotate, rotate, size, size);
       ctx.restore();
 
       ctx.fillStyle = "black";
       ctx.save();
-      ctx.translate(70, 70);
-      ctx.rotate(1000 * deg);
-      ctx.fillRect(-50, -50, 100, 100);
+      ctx.translate(translate, translate);
+      ctx.rotate(10 * deg);
+      ctx.fillRect(rotate, rotate, size, size);
       ctx.restore();
     </script>
   </body>
